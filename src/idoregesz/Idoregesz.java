@@ -31,17 +31,42 @@ public class Idoregesz extends javax.swing.JFrame {
         lblKep = new javax.swing.JLabel();
         lblEro = new javax.swing.JLabel();
         lblEroMennyiseg = new javax.swing.JLabel();
+        lblIranytu = new javax.swing.JLabel();
+        lblDel = new javax.swing.JLabel();
+        lblEszak1 = new javax.swing.JLabel();
+        lblKelet = new javax.swing.JLabel();
+        lblNyugat = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         txtaSzoveg = new javax.swing.JTextArea();
         txtfInput = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(774, 493));
+        setMinimumSize(new java.awt.Dimension(774, 493));
+        setResizable(false);
 
         pnlHatterSzin.setBackground(new java.awt.Color(204, 204, 255));
+        pnlHatterSzin.setMaximumSize(new java.awt.Dimension(774, 493));
+        pnlHatterSzin.setMinimumSize(new java.awt.Dimension(774, 493));
+
+        pnlHatter.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
+
+        lblKep.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
         lblEro.setText("Erő:");
 
         lblEroMennyiseg.setText("10");
+
+        lblIranytu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/Képernyőkép 2023-12-13 131939.png"))); // NOI18N
+        lblIranytu.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
+
+        lblDel.setText("D");
+
+        lblEszak1.setText("É");
+
+        lblKelet.setText("K");
+
+        lblNyugat.setText("NY");
 
         javax.swing.GroupLayout pnlHatterLayout = new javax.swing.GroupLayout(pnlHatter);
         pnlHatter.setLayout(pnlHatterLayout);
@@ -52,59 +77,97 @@ public class Idoregesz extends javax.swing.JFrame {
                 .addComponent(lblEro)
                 .addGap(18, 18, 18)
                 .addComponent(lblEroMennyiseg, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(77, 77, 77)
-                .addComponent(lblKep, javax.swing.GroupLayout.PREFERRED_SIZE, 438, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(173, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(lblKep, javax.swing.GroupLayout.PREFERRED_SIZE, 560, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(pnlHatterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlHatterLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblNyugat, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(3, 3, 3)
+                        .addComponent(lblIranytu)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 7, Short.MAX_VALUE)
+                        .addComponent(lblKelet, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlHatterLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lblDel, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(68, 68, 68))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlHatterLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lblEszak1, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(67, 67, 67))
         );
         pnlHatterLayout.setVerticalGroup(
             pnlHatterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlHatterLayout.createSequentialGroup()
-                .addContainerGap(31, Short.MAX_VALUE)
-                .addComponent(lblKep, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(25, 25, 25))
             .addGroup(pnlHatterLayout.createSequentialGroup()
-                .addGap(45, 45, 45)
-                .addGroup(pnlHatterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblEro)
-                    .addComponent(lblEroMennyiseg))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(pnlHatterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlHatterLayout.createSequentialGroup()
+                        .addGap(8, 8, 8)
+                        .addComponent(lblEszak1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(pnlHatterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblKep, javax.swing.GroupLayout.DEFAULT_SIZE, 220, Short.MAX_VALUE)
+                            .addGroup(pnlHatterLayout.createSequentialGroup()
+                                .addGroup(pnlHatterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblIranytu)
+                                    .addGroup(pnlHatterLayout.createSequentialGroup()
+                                        .addGap(43, 43, 43)
+                                        .addGroup(pnlHatterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(lblKelet)
+                                            .addComponent(lblNyugat))))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(lblDel)
+                                .addGap(0, 0, Short.MAX_VALUE))))
+                    .addGroup(pnlHatterLayout.createSequentialGroup()
+                        .addGap(45, 45, 45)
+                        .addGroup(pnlHatterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblEro)
+                            .addComponent(lblEroMennyiseg))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
 
+        txtaSzoveg.setEditable(false);
         txtaSzoveg.setColumns(20);
         txtaSzoveg.setRows(5);
+        txtaSzoveg.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         jScrollPane1.setViewportView(txtaSzoveg);
+
+        txtfInput.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
         javax.swing.GroupLayout pnlHatterSzinLayout = new javax.swing.GroupLayout(pnlHatterSzin);
         pnlHatterSzin.setLayout(pnlHatterSzinLayout);
         pnlHatterSzinLayout.setHorizontalGroup(
             pnlHatterSzinLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pnlHatter, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jScrollPane1)
             .addGroup(pnlHatterSzinLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(txtfInput)
-                .addContainerGap())
+                .addGroup(pnlHatterSzinLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jScrollPane1)
+                    .addComponent(pnlHatter, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(txtfInput))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         pnlHatterSzinLayout.setVerticalGroup(
             pnlHatterSzinLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlHatterSzinLayout.createSequentialGroup()
+                .addContainerGap()
                 .addComponent(pnlHatter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtfInput, javax.swing.GroupLayout.DEFAULT_SIZE, 76, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(txtfInput, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pnlHatterSzin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(pnlHatterSzin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pnlHatterSzin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(pnlHatterSzin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -147,9 +210,14 @@ public class Idoregesz extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel lblDel;
     private javax.swing.JLabel lblEro;
     private javax.swing.JLabel lblEroMennyiseg;
+    private javax.swing.JLabel lblEszak1;
+    private javax.swing.JLabel lblIranytu;
+    private javax.swing.JLabel lblKelet;
     private javax.swing.JLabel lblKep;
+    private javax.swing.JLabel lblNyugat;
     private javax.swing.JPanel pnlHatter;
     private javax.swing.JPanel pnlHatterSzin;
     private javax.swing.JTextArea txtaSzoveg;
